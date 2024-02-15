@@ -16,8 +16,16 @@ def validate_date_format(date_string):
     except ValueError:
         return False
 
-with open("Ej 1/Act1.json") as json_file:
-    data = json.load(json_file)
+# Datos JSON a validar como una cadena
+json_data = """
+{
+    "nombre": "Juan",
+    "fecha_nacimiento": "15-02-2000"
+}
+"""
+
+if json_validator(json_data):
+    data = json.loads(json_data)
 
     if "fecha_nacimiento" in data:
         if validate_date_format(data["fecha_nacimiento"]):
@@ -26,12 +34,5 @@ with open("Ej 1/Act1.json") as json_file:
             print("Fecha de nacimiento inválida")
     else:
         print("No se encontró la clave 'fecha_nacimiento' en el JSON")
-
-
-
-
-
-
-
-
-
+else:
+    print("El JSON proporcionado no es válido.")

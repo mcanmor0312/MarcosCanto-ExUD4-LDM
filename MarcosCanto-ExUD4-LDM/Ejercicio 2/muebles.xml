@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<muebles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="muebles.xsd">
+   <mueble color="blanco">mesa</mueble>
+   <mueble color="gris">silla</mueble>
+   <mueble color="negro">mesa</mueble>
+   <mueble color="wengue">armario</mueble>
+   <mueble color="negro">silla</mueble>
+   <mueble color="wengue">armario</mueble>
+   <mueble color="blanco">mesa</mueble>
+   <mueble color="negro">silla</mueble>
+</muebles>
